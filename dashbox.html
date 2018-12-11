@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html>
 	<head>
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,6 +26,22 @@
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
+
+		<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
 	</head>
 	<body>
 		<!-- Start Header Area -->
@@ -64,17 +80,249 @@
 		</section>
 		<!-- End Banner Area -->
 
-
 <!-- Start Map Area -->
 		<div id="map"></div>
 		    <script>
 		      var map;
 		      function initMap() {
 		        map = new google.maps.Map(document.getElementById('map'), {
-		          center: {lat: -34.397, lng: 150.644},
-		          zoom: 8
+		          center: {lat: 37.6, lng: -122.4194},
+		          zoom: 10
 		        });
-		      }
+
+
+						map.data.setStyle({
+						  fillColor: 'blue'
+						});
+
+						var sailData = {
+							wispName: "Sail",
+							wispCoord: {lat: 37.5, lng: -122.4},
+							wispRevenue: "$6,441,903",
+							wispGrowth: "+12%",
+							wispROI: "+22%"
+						}
+
+						var ethericData = {
+							wispName: "Etheric",
+							wispCoord: {lat: 37.6, lng: -122.419},
+							wispRevenue: "$1,421,007",
+							wispGrowth: "+6%",
+							wispROI: "+13%"
+						}
+
+						var commonData = {
+							wispName: "Common",
+							wispCoord: {lat: 37.7, lng: -122.409},
+							wispRevenue: "$22,088,911",
+							wispGrowth: "+31%",
+							wispROI: "+20%"
+						}
+
+
+						var wispMap = {
+						  sail: {
+						    center: sailData.wispCoord,
+						    range: 10000,
+								name: sailData.wispName,
+								revenue: sailData.wispRevenue,
+								growth: sailData.wispGrowth,
+								roi: sailData.wispROI
+						  },
+						  etheric: {
+						    center: ethericData.wispCoord,
+						    range: 8409,
+								name: ethericData.wispName,
+								revenue: ethericData.wispRevenue,
+								growth: ethericData.wispGrowth,
+								roi: ethericData.wispROI
+						  },
+						  common: {
+						    center: commonData.wispCoord,
+						    range: 5000,
+								name: commonData.wispName,
+								revenue: commonData.wispRevenue,
+								growth: commonData.wispGrowth,
+								roi: commonData.wispROI
+						  }
+						};
+
+						var markerSail = new google.maps.Marker({
+						position: sailData.wispCoord,
+						map: map,
+						name: sailData.wispName,
+						revenue: sailData.wispRevenue,
+						growth: sailData.wispGrowth,
+						roi: sailData.wispROI
+					});
+
+					var markerEtheric = new google.maps.Marker({
+					position: ethericData.wispCoord,
+					map: map,
+					name: ethericData.wispName,
+					revenue: ethericData.wispRevenue,
+					growth: ethericData.wispGrowth,
+					roi: ethericData.wispROI
+				});
+
+				var markerCommon = new google.maps.Marker({
+					position: commonData.wispCoord,
+					map: map,
+					name: commonData.wispName,
+					revenue: commonData.wispRevenue,
+					growth: commonData.wispGrowth,
+					roi: commonData.wispROI
+			});
+
+
+
+var testString = '<p>Name: Common <br> Revenue: $22,088,911 <br> Growth: 31% <br> ROI: 20%</p>';
+
+
+var outerCoords = [
+{lat: 37.6, lng: -122.3}, // north west
+{lat: 37.4, lng: -122.3}, // south west
+{lat: 37.4, lng: -122.5}, // south east
+{lat: 37.6, lng: -122.5}  // north east
+];
+
+
+
+var testt = new google.maps.Data.Polygon([outerCoords]);
+
+/*map.data.add({geometry: testt})*/
+
+
+var infowindowSail = new google.maps.InfoWindow({
+	content:testString
+});
+
+
+
+/*
+
+				var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+
+				marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+*/
+
+									// function to display WISP data
+					var displayFunction = function (event) {
+						alert(
+							"Name: " + this.name + '\n' +
+							"Revenue: " + this.roi + '\n' +
+							"Growth: " + this.growth + '\n' +
+							"ROI: " + this.roi
+						);
+					};
+
+					var infoDisplayFunction = function (event) {
+
+						infowindow.open(map, commonMarker);
+
+					};
+
+					var displayFunctionX = function (event) {
+						alert(
+							"Name: "
+						);
+					};
+
+
+
+
+
+    // Add the circle for this city to the map.
+    var wispCircleSail = new google.maps.Circle({
+      strokeColor: 'green',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: 'green',
+      fillOpacity: 0.35,
+      map: map,
+      center: wispMap.sail.center,
+      radius: wispMap.sail.range,
+			name: wispMap.sail.name,
+			growth: wispMap.sail.growth,
+			revenue: wispMap.sail.revenue,
+			roi: wispMap.sail.roi
+    });
+
+		var wispCircleEtheric = new google.maps.Circle({
+			strokeColor: 'red',
+			strokeOpacity: 0.8,
+			strokeWeight: 2,
+			fillColor: 'red',
+			fillOpacity: 0.35,
+			map: map,
+			center: wispMap.etheric.center,
+			radius: wispMap.etheric.range,
+			name: wispMap.etheric.name,
+			growth: wispMap.etheric.growth,
+			revenue: wispMap.etheric.revenue,
+			roi: wispMap.etheric.roi
+		});
+
+		var wispCircleCommon = new google.maps.Circle({
+			strokeColor: 'blue',
+			strokeOpacity: 0.8,
+			strokeWeight: 2,
+			fillColor: 'blue',
+			fillOpacity: 0.35,
+			map: map,
+			center: wispMap.common.center,
+			radius: wispMap.common.range,
+			name: wispMap.common.name,
+			growth: wispMap.common.growth,
+			revenue: wispMap.common.revenue,
+			roi: wispMap.common.roi
+		});
+
+
+google.maps.event.addListener(wispCircleSail, 'click', displayFunction, false);
+google.maps.event.addListener(wispCircleEtheric, 'click', displayFunction, false);
+google.maps.event.addListener(wispCircleCommon, 'click', displayFunction, false);
+/*
+		var wispInfoX = "Name: " + wispMap[wisp].name + '<br>' +
+		"Revenue: " + wispMap[wisp].roi + "<br>" +
+		"Growth: " + wispMap[wisp].growth + "<br>" +
+		"ROI: " + wispMap[wisp].roi;
+
+		var infowindowX = new google.maps.InfoWindow({
+			content: (
+				wispInfoX
+			)
+		});
+
+		var infoDisplayFunctionX = function (event) {
+
+			infowindowX.open(map, markerCommon);
+
+		};
+
+		google.maps.event.addListener(wispCircle, 'mouseover', infoDisplayFunctionX, false);
+*/
+
+
+
+
+/*
+
+					// Event listeners
+					google.maps.event.addListener(markerSail, 'click', displayFunction, false);
+					google.maps.event.addListener(markerEtheric, 'click', displayFunction, false);
+					google.maps.event.addListener(markerCommon, 'click', displayFunction, false);
+
+*/
+
+		 }
+
+
 		    </script>
 		    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACXX4jsbfG7WjXS2KvnX_RlIv5rHOmQ0w&callback=initMap"
 		    async defer></script>
@@ -82,84 +330,59 @@
 <!-- End Map Area -->
 
 		<!-- Start Footer Area -->
-		<footer class="section-gap">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget">
-							<h6 class="text-uppercase mb-20">Top Products</h6>
-							<ul class="footer-nav">
-								<li><a href="#">Managed Website</a></li>
-								<li><a href="#">Manage Reputation</a></li>
-								<li><a href="#">Power Tools</a></li>
-								<li><a href="#">Marketing Service</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget">
-							<h6 class="text-uppercase mb-20">Company</h6>
-							<ul class="footer-nav">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Main Feature</a></li>
-								<li><a href="#">Offered Services</a></li>
-								<li><a href="#">Latest Portfolio</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget">
-							<h6 class="text-uppercase mb-20">Support</h6>
-							<ul class="footer-nav">
-								<li><a href="#">Works & Builders</a></li>
-								<li><a href="#">Works & Wordpress</a></li>
-								<li><a href="#">Works & templates</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget">
-							<h6 class="text-uppercase mb-20">Projects</h6>
-							<ul class="footer-nav">
-								<li><a href="#">Works & Builders</a></li>
-								<li><a href="#">Works & Wordpress</a></li>
-								<li><a href="#">Works & templates</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="single-footer-widget">
-							<h6 class="text-uppercase mb-20">Quick Contact</h6>
-							<p>
-								Lorem ipsum dolor sit amet, consecteturadipisicin gelit, sed do eiusmod tempor incididunt.
-							</p>
-							<p>
-								+00 012 6325 98 6542 <br>
-								support@colorlib.com
-							</p>
-							<div class="footer-social d-flex align-items-center">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-dribbble"></i></a>
-								<a href="#"><i class="fa fa-behance"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+<footer class="section-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-sm-6">
+				<div class="single-footer-widget">
+					<h6 class="text-uppercase mb-20">Partners</h6>
+					<ul class="footer-nav">
+						<li><a href="#">SFWISP</a></li>
+						<li><a href="#">BayNet</a></li>
+						<li><a href="#">Valley Broadband</a></li>
+						<li><a href="#">Marin Telecoms</a></li>
+					</ul>
 				</div>
 			</div>
-		</footer>
+			<div class="col-lg-2 col-sm-6">
+				<div class="single-footer-widget">
+					<h6 class="text-uppercase mb-20">Company</h6>
+					<ul class="footer-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="col-lg-2 col-sm-6">
+				<div class="single-footer-widget">
+					<h6 class="text-uppercase mb-20">Projects</h6>
+					<ul class="footer-nav">
+						<li><a href="#">Roadmap</a></li>
+						<li><a href="#">Research</a></li>
+						<li><a href="#">Data</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+</footer>
+
 		<!-- End Footer Area -->
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
-		 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 		<script src="js/jquery.nice-select.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/main.js"></script>
