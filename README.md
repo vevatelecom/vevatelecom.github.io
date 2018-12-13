@@ -1,1 +1,0 @@
-# vevatelecom.github.io
