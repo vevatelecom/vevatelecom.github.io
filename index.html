@@ -1,568 +1,1058 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>VEVA</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+<html class="no-js" lang="zxx">
 
-        <style>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>VEVA</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-        #vevaLogoSize {
-          width:auto;
-          height:50px;
-        }
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-        .partner-logo-size {
-          width:auto;
-          height: 90px;
-        }
+<body class="site2" data-spy="scroll" data-target=".mainmenu-area">
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
 
-        .roadmapFlex {
-          display:flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        </style>
-
-
-    </head>
-    <body>
-
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" id="vevaLogoSize"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WISPs</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="#">CA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">NV</a></li>
-									</ul>
-								</li>
-								<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
-							</ul>
-						</div>
-					</div>
-            	</nav>
+    <!-- Mainmenu-Area -->
+    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="search-box" class="collapse">
+                        <form action="#">
+                            <input type="search" class="form-control" placeholder="What do you want to know?">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="navbar-header smoth">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#home-area"><img style="max-width: 150px; max-height:auto"src="assets/logo.png" alt=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="mainmenu">
 
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-            <div class="banner_inner d-flex align-items-center">
-				<div class="container">
-					<div class="banner_content">
-						<h1 id="bannerHeader" style="font-size: 70px">From Wi-Fi to ROI-Fi</h1>
-						<h2>Find Your Next Investment</h2>
-						<a class="main_btn" href="#">Learn More</a>
-					</div>
-				</div>
+                      <!--
+                        <ul class="nav navbar-nav navbar-right help-menu">
+                            <li><a href=""><i class="icofont icofont-user-alt-4"></i></a></li>
+                            <li><a href="#search-box" data-toggle="collapse"><i class="icofont icofont-search-alt-2"></i></a></li>
+                            <li class="select-cuntry">
+                                <select name="counter" id="counter">
+                                    <option value="ENG">ENG</option>
+                                    <option value="BEN">BEN</option>
+                                    <option value="ARA">ARA</option>
+                                    <option value="ARG">ARG</option>
+                                    <option value="CHV">CHV</option>
+                                </select>
+                            </li>
+                        </ul>
+
+                      -->
+
+                        <ul class="nav navbar-nav primary-menu">
+                            <li class="active"><a href="#home-area">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
+    </nav>
+    <!-- Mainmenu-Area-/ -->
+
+
+    <!--Header-Area-->
+    <header class="header-area overlay" id="home-area">
+        <div class="vcenter">
             <div class="container">
-				<div class="advanced_search">
-					<h3>Search WISPs</h3>
-					<div class="search_select">
-						<select class="s_select">
-							<option value="1">Location</option>
-							<option value="2">NV</option>
-							<option value="4">OR</option>
-						</select>
-						<select class="s_select">
-							<option value="1">Type</option>
-							<option value="2">Fiber</option>
-							<option value="4">Wireless</option>
-						</select>
-						<select class="s_select">
-							<option value="1">Round</option>
-							<option value="2">Seed</option>
-							<option value="4">Series A</option>
-						</select>
-						<select class="s_select">
-							<option value="1">Term</option>
-							<option value="2">12 Months</option>
-							<option value="4">36 Months</option>
-						</select>
-					</div>
-					<div class="search_range">
-						<div class="range_item">
-							<h5>Size</h5>
-							<div id="slider-range"></div>
-							<span class="d_text">Number of Customers</span>
-							<input type="text" id="amount" readonly style="border:0;" class="amount">
-						</div>
-						<div class="range_item">
-							<h5>Coverage Area</h5>
-							<div id="slider-range2"></div>
-							<span class="d_text2">Square Miles</span>
-							<input type="text" id="amount2" readonly style="border:0;" class="amount2">
-						</div>
-					</div>
-					<button type="submit" value="submit" class="btn submit_btn">Search Providers</button>
-				</div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+                        <div class="header-text">
+                            <h1 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">VEVA</h1>
+                            <div class="wow fadeInUp upper latter-space" data-wow-delay="0.2s">We have a mission statement and objective</div>
+                            <br>
+                            <div class="wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="#" class="bttn bttn-lg bttn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--================End Home Banner Area =================-->
+        </div>
 
-        <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
-        	<div class="container">
-        		<div class="row welcome_inner">
-        			<div class="col-lg-6">
-        				<div class="welcome_img">
-        					<img class="img-fluid" src="img/welcome-1.jpg" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="welcome_text">
-        					<h4>VEVA</h4>
-        					<p>VEVA is bringing the cowdfunding model to broadband. Finally, non-institutional investors can have the same access to investment opportunities as the big guys—and small WISPs have the access to capital that they need to scale.</p>
-        					<div class="row">
-        						<div class="col-sm-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>681</h4>
-        								<p>Providers</p>
-        							</div>
-        						</div>
-        						<div class="col-sm-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>$12.5M</h4>
-        								<p>Total AUM</p>
-        							</div>
-        						</div>
-        						<div class="col-sm-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>1092</h4>
-        								<p>Investors</p>
-        							</div>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Welcome Area =================-->
+    </header>
+    <!--Header-Area-/-->
 
-        <!--================Properties Area =================-->
-        <section class="properties_area">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Current Offerings</h2>
-        			<p>All of our investment opportunities are thoroughly vetted and return 17%-25% (target)</p>
-        		</div>
-        		<div class="row properties_inner">
-        			<div class="col-lg-4">
-        				<div class="properties_item">
-        					<div class="pp_img">
-        						<img class="img-fluid" src="img/properties/pp-1.jpg" alt="">
-        					</div>
-        					<div class="pp_content">
-        						<a href="#"><h4>WISP, INC. (Palo Alto, CA)</h4></a>
-        						<div class="tags">
-        							<a href="#">16 Months</a>
-        							<a href="#">18% Target</a>
-        							<a href="#">>1k Subs</a>
-        							<a href="#"><i class="fa fa-check" aria-hidden="true"></i>Series A</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>Fiber</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>WiGig</a>
-        						</div>
-        						<div class="pp_footer">
-        							<h5>Minimum: $35k</h5>
-        							<a class="main_btn" href="#">Invest</a>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="properties_item">
-        					<div class="pp_img">
-        						<img class="img-fluid" src="img/properties/pp-2.jpg" alt="">
-        					</div>
-        					<div class="pp_content">
-        						<a href="#"><h4>BAY COMM (San Mateo, CA)</h4></a>
-        						<div class="tags">
-        							<a href="#">24 Months</a>
-        							<a href="#">16% Target</a>
-        							<a href="#">>5k Subs</a>
-        							<a href="#"><i class="fa fa-check" aria-hidden="true"></i>Fiber</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>WiGig</a>
-                      <a href="#"><i class="fa fa-check" aria-hidden="true"></i>Business</a>
-        						</div>
-        						<div class="pp_footer">
-        							<h5>Minimum: $120k</h5>
-        							<a class="main_btn" href="#">Invest</a>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="properties_item">
-        					<div class="pp_img">
-        						<img class="img-fluid" src="img/properties/pp-3.jpg" alt="">
-        					</div>
-        					<div class="pp_content">
-        						<a href="#"><h4>FWB NETWORKS (Oakland, CA)</h4></a>
-        						<div class="tags">
-        							<a href="#">21% Target</a>
-        							<a href="#">21 Months</a>
-        							<a href="#"><500 Subs</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>Seed</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>Fiber</a>
-        							<a href="#"><i class="fa fa-times" aria-hidden="true"></i>WiGig</a>
-        						</div>
-        						<div class="pp_footer">
-        							<h5>Minimum: $20k</h5>
-        							<a class="main_btn" href="#">Invest</a>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Properties Area =================-->
 
-        <!--================Testimonials Area =================-->
+    <!-- Blog-area -->
+    <section class="section-padding" id="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h1 class="title">Latest</h1>
+                        <p>News, research, and more!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 wow fadeInUp">
+                    <div class="blog-box">
+                        <div class="blog-image">
+                            <img src="latest/blog/cyberport.jpg" alt="">
+                        </div>
+                        <div class="blog-details">
+                            <h4><a href="https://www.wballiance.com/asia-telecom-summit/">VEVA will be at WBA Asia Telecom Summit!</a></h4>
+                            <p>We will be at the WBA Asia Telecom Summit in Hong Kong at the end of January. Come find us and say hello!  More info and photos to come.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="blog-lists">
+  <a class="twitter-timeline" data-height="450" href="https://twitter.com/vevaone?ref_src=twsrc%5Etfw">Tweets by vevaone</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div>
+
+</div>
+<br>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+          <div class="page-title text-center">
+              <br>
+              <h3>Recent Blog Posts</h3>
+          </div>
+      </div>
+    </div>
+
+
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 wow fadeInUp">
+                <div class="blog-box">
+
+                  <div class="blog-list wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="blog-list-image">
+                          <img src="images/blog-th-1.jpg" alt="">
+                      </div>
+                      <h5><a href="#">Test run of WiGig Routers</a></h5>
+                      <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 06 JAN 2019</div>
+                      <p>Here is a blog post about WiGig routers and which one is the best</p>
+                  </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 wow fadeInUp">
+                <div class="blog-box">
+
+                  <div class="blog-list wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="blog-list-image">
+                          <img src="images/blog-th-3.jpg" alt="">
+                      </div>
+                      <h5><a href="#">Position Paper on VEVA</a></h5>
+                      <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 03 JAN 2019</div>
+                      <p>Read on to find out how VEVA is disrupting wireless broadband financing!.</p>
+                  </div>
+
+
+                </div>
+            </div>
+
+
+
+
+</div>
+</div>
+            </div>
+
+    </section>
+    <!-- Blog-area / -->
+
+
+    <!-- Team-Area -->
+    <section class="section-padding gray-bg" id="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2 class="title">Team</h2>
+                        <p>Our team has backgrounds ranging from Telecom to Finance to Law</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-image">
+                            <img src="assets/team/yn.png" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Yann Ngongang</h5>
+                            <span class="t_sub_title">CEO</span>
+                            <p>MBA Stanford; B.S. University of Maryland</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-slack"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-image">
+                            <img src="assets/team/ra.jpg" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Ravi Anaparti</h5>
+                            <span class="t_sub_title">Finance</span>
+                            <p>MBA U.C. Berkeley; M.S. U.C. Berkeley</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-image">
+                            <img src="assets/team/ry.png" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Reuben Youngblom</h5>
+                            <span class="t_sub_title">Product</span>
+                            <p>JD U.C. Davis; B.A. U.C. Santa Cruz</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-github"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-image">
+                            <img src="images/team-6.png" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Joe Atkins</h5>
+                            <span class="t_sub_title">Sales</span>
+                            <p>B.S. Brigham Young University</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team-Area / -->
+
+
+    <!-- About-Area -->
 
 <!--
-        <section class="testimonials_area p_120">
-        	<div class="container">
-        		<div class="row testimonials_inner">
-        			<div class="col-lg-4">
-        				<div class="testi_left_text">
-        					<h4>Client’s Feedback</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-8">
-        				<div class="testi_slider owl-carousel">
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-						</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
+
+    <section class="section-padding" id="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <div class="page-title">
+                        <h2 class="title wow fadeInUp">The Most Incredible &amp; More Effective Business Start Up Solution</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,</p>
+                        </div>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.7s">
+                        <a href="#" class="bttn bttn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-offset-1">
+                    <div class="page-title">
+                        <h2>Free Quently Asked Question</h2>
+                    </div>
+                    <div class="panel-group accordion1" id="accordion">
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#collapse1">How to improved my designing skill?</a>
+                            <div id="collapse1" class="collapse in ">
+                                <div class="text-body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,</div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">How to be a professional Designer?</a>
+                            <div id="collapse2" class="collapse">
+                                <div class="text-body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Tips: How to developed your business?</a>
+                            <div id="collapse3" class="collapse">
+                                <div class="text-body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  -->
+    <!-- About-Area / -->
+
+
+<!--
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">Our Best Service</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="service-box">
+                        <div class="box-image">
+                            <img src="images/service-1.jpg" alt="">
+                            <a href="#" class="box-plus">
+                                <i class="icofont icofont-plus"></i>
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <h4>Financial Planning</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="service-box">
+                        <div class="box-image">
+                            <img src="images/service-2.jpg" alt="">
+                            <a href="#" class="box-plus">
+                                <i class="icofont icofont-plus"></i>
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <h4>Digital Marketing</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="service-box">
+                        <div class="box-image">
+                            <img src="images/service-3.jpg" alt="">
+                            <a href="#" class="box-plus">
+                                <i class="icofont icofont-plus"></i>
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <h4>Market Analysis</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="service-box">
+                        <div class="box-image">
+                            <img src="images/service-4.jpg" alt="">
+                            <a href="#" class="box-plus">
+                                <i class="icofont icofont-plus"></i>
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <h4>Graphics Designing</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="video-box">
+                        <img src="images/video-image.png" alt="">
+                        <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video-bttn"><img src="images/video-button.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 wow fadeInUp">
+                    <div class="page-title">
+                        <h2 class="title">Why Choose Us?</h2>
+                        <ul class="tabs-list-2">
+                            <li class="active"><a data-toggle="pill" href="#our_mission">Our Mission</a></li>
+                            <li><a data-toggle="pill" href="#our_vission">Our Vission</a></li>
+                            <li><a data-toggle="pill" href="#our_support">Our Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="our_mission" class="tab-pane fade in active">
+                            <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
+                            <h3 class="upper">EXPERIENCE IN THIS PASSION</h3>
+                            <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
+                            <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
 -->
 
 
-<section class="testimonials_area p_120">
-  <div class="container">
-    <div class="row testimonials_inner">
-      <div class="col-lg-4 roadmapFlex">
-        <div class="testi_left_text">
-          <h4>Roadmap to DeFi</h4>
-          <p>Decentralized finance will bring new markets and new ways to invest. VEVA is a first mover in this space, and will be leading the charge as we move from finance 1.0 to DeFi.</p>
-        </div>
-      </div>
-<div class="col-lg-8 roadmapFlex">
+                            <!-- Left-aligned -->
 
-  <img src="img/roadmap_draft.png" alt="" style="max-height:200px;; max-width: auto">
+<!--
 
-</div>
-    </div>
-  </div>
-</section>
-
-
-        <!--================End Testimonials Area =================-->
-
-        <!--================Cities Area =================-->
-        <section class="cities_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Upcoming Networks</h2>
-        			<p>These networks are in the final stages of due dilligence, with more in the pipeline</p>
-        		</div>
-        		<div class="row cities_inner">
-        			<div class="col-lg-3 col-md-6">
-        				<div class="cities_item">
-                  <h2> Reno, NV </h2>
-        					<img class="img-fluid" src="img/cities/cities-1.jpg" alt="">
-        					<a class="main_btn2" href="#">More Info</a>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="cities_item">
-                  <h2> Venice, CA </h2>
-        					<img class="img-fluid" src="img/cities/cities-2.jpg" alt="">
-        					<a class="main_btn2" href="#">More Info</a>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="cities_item">
-                  <h2> Portland, OR </h2>
-        					<img class="img-fluid" src="img/cities/cities-3.jpg" alt="">
-        					<a class="main_btn2" href="#">More Info</a>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="cities_item">
-                  <h2> Las Vegas, NV </h2>
-        					<img class="img-fluid" src="img/cities/cities-4.jpg" alt="">
-        					<a class="main_btn2" href="#">More Info</a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Cities Area =================-->
-
-        <!--================Feature Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Why VEVA</h2>
-        			<p>Whether you're a capital partner or a WISP, we have services to meet your needs</p>
-        		</div>
-        		<div class="row feature_inner">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-users"></i>Sales Consulting</h4>
-        					<p>We understand that the toughest part of growing is actually getting customers. Our direct marketing experts can help you scale and add customers, fast.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-pie-chart"></i>Open Data</h4>
-        					<p>Nobody wants to invest in a black box. Our partners get access to a full slate of data to help you make better decisions and protect your investment.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-earth"></i>Global Reach</h4>
-        					<p>The internet isn't limited by geography, and neither should your investments. VEVA has partners all over the world—and so can you.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-laptop-phone"></i>Invest On The Go</h4>
-        					<p>With finance moving at the speed of light, we get that 24/7 access is important. Your dashboard is available any time, on any device.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-diamond"></i>High ROI</h4>
-        					<p>We shoot for 25% returns, and often exceed our targets. If that doesn't give you confidence, our track record of zero principle losses should.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<h4><i class="lnr lnr-rocket"></i>Future-Proof</h4>
-        					<p>We're building for finance 2.0. Join us as we bring investments into the world of decentralized finance.</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Feature Area =================-->
-
-
-        <!--================Clients Logo Area =================-->
-        <section class="clients_logo_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Our Partners</h2>
-        			<p>
-
-                <!-- partner text here -->
-
-              </p>
-        		</div>
-        		<div class="clients_slider owl-carousel">
-        			<div class="item">
-        				<img src="img/clients-logo/d-logo-1.png" alt="" class="partner-logo-size">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/d-logo-2.png" alt="" class="partner-logo-size">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/d-logo-3.png" alt="" class="partner-logo-size">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/d-logo-4.png" alt="" class="partner-logo-size">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/d-logo-5.png" alt="" class="partner-logo-size">
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Clients Logo Area =================-->
-
-
-        <!--================ start footer Area  =================-->
-        <footer class="footer-area p_120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3  col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h6 class="footer_title">About Us</h6>
-                            <p> VEVA brings a crowdfunding model to small-midsized WISPs. Our team does deep due dilligence on every network, leading to 25% target returns.</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="images/testimonial-2.png" class="media-object">
+                                </div>
+                                <div class="media-right media-middle">
+                                    <h5 class="media-heading satisfy">John Doe</h5>
+                                    <h6>ceo of Classic.</h6>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h6 class="footer_title">Mailing List</h6>
-                            <p>Keep updated on our latest networks</p>
-                            <div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                    <div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
-                                    </div>
-                                    <div class="mt-10 info"></div>
-                                </form>
+                        <div id="our_vission" class="tab-pane fade">
+                            <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
+                            <h3 class="upper">EXPERIENCE IN THIS PASSION</h3>
+                            <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
+                            <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
+-->
+                            <!-- Left-aligned -->
+<!--
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="images/testimonial-1.png" class="media-object">
+                                </div>
+                                <div class="media-right media-middle">
+                                    <h5 class="media-heading satisfy">John Doe</h5>
+                                    <h6>ceo of Classic.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="our_support" class="tab-pane fade">
+                            <h4 class="upper thing">SINCE WE HAVE 25 YEARS </h4>
+                            <h3 class="upper">EXPERIENCE IN THIS PASSION</h3>
+                            <p><q><em>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. Suspendisse in porttitor orci. Pellentesque vel gravida augue.</em></q></p>
+                            <p>Aenean rutrum, lorem sed cursus tristique, turpis velit ullamcorper ligula, id pretium elit augue in libero. </p>
+-->
+                            <!-- Left-aligned -->
+<!--
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="images/testimonial-2.png" class="media-object">
+                                </div>
+                                <div class="media-right media-middle">
+                                    <h5 class="media-heading satisfy">John Doe</h5>
+                                    <h6>ceo of Classic.</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget instafeed">
-                            <h6 class="footer_title">Latest News</h6>
-                            <ul class="list instafeed d-flex flex-wrap">
-                                <li><h5 style="color:white"> Farm Bill Passes</h5>
-                                <p>more funding for rural broadband</p>
-                                </li>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                <li><h5 style="color:white"> Comcast Sucks </h5>
-                                <p> providers lie about internet speeds </p>
-                                </li>
+-->
 
-                                <!--
-                                <li><img src="img/instagram/Image-01.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-02.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-03.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-04.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-05.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-06.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-07.jpg" alt=""></li>
-                                <li><img src="img/instagram/Image-08.jpg" alt=""></li>
-                              -->
+    <!-- Portfolio-Area -->
+
+<!--
+    <section class="section-padding gray-bg" id="portfolio-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">Portfolio Project</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+-->
+                    <!-- Mixitup controls -->
+
+<!--
+                    <ul class="filter-controls text-center">
+                        <li class="active filter" data-filter="all">All</li>
+                        <li class="active filter" data-filter=".graphics">Graphics</li>
+                        <li class="filter" data-filter=".ux_ui">UI/UX</li>
+                        <li class="filter" data-filter=".web_design">Web Design</li>
+                        <li class="filter" data-filter=".coding">Coding</li>
+                        <li class="filter" data-filter=".developing">Developing</li>
+                        <li class="filter" data-filter=".photography">Photography</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="filtering">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics developing">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-1.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Print Template</h5>
+                            <a href="images/work-1.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui ">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-2.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Graphics Template</h5>
+                            <a href="images/work-2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics ">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-3.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Web Template</h5>
+                            <a href="images/work-3.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui developing">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-4.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Developing</h5>
+                            <a href="images/work-4.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design photography">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-5.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Photography</h5>
+                            <a href="images/work-5.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix coding">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-6.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Coding</h5>
+                            <a href="images/work-6.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design developing">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-7.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Web Desing</h5>
+                            <a href="images/work-7.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix coding photography">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="images/work-8.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Coding</h5>
+                            <a href="images/work-8.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Portfolio-Area / -->
+
+
+<!--
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">Our Working Process</h2>
+                        <p>There are many variations of passages of lorem ipsum avalable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row process text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-pie"></i>
+                        </div>
+                        <h3>Investigation</h3>
+                        <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-users-alt-1"></i>
+                        </div>
+                        <h3>Consultant</h3>
+                        <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-brainstorming"></i>
+                        </div>
+                        <h3>Planning</h3>
+                        <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-settings-alt"></i>
+                        </div>
+                        <h3>Working</h3>
+                        <p>There are many varia tions of passages of Lorem Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+-->
+
+
+
+    <!-- Price-Area -->
+
+<!--
+
+    <section class="section-padding gray-bg" id="price-area">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h2 class="title">Pricing Plan</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="price-tabs">
+                        <li class="active"><a data-toggle="pill" href="#monthly">Monthly</a></li>
+                        <li><a data-toggle="pill" href="#yearly">Yearly</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row prices tab-content">
+                <div id="monthly" class="tab-pane fade in active">
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="price-box">
+                            <h4>Basic</h4>
+                            <h3 class="amount">&#36;10 /<span>Month</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="price-box active">
+                            <h4>Premium</h4>
+                            <h3 class="amount">&#36;50 /<span>Month</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="price-box">
+                            <h4>Business</h4>
+                            <h3 class="amount">&#36;80 /<span>Month</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                        <div class="price-box">
+                            <h4>Ultimate</h4>
+                            <h3 class="amount">&#36;100 /<span>Month</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="yearly" class="tab-pane fade">
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="price-box">
+                            <h4>Basic</h4>
+                            <h3 class="amount">&#36;10 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="price-box active">
+                            <h4>Premium</h4>
+                            <h3 class="amount">&#36;50 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="price-box">
+                            <h4>Business</h4>
+                            <h3 class="amount">&#36;80 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                        <div class="price-box">
+                            <h4>Ultimate</h4>
+                            <h3 class="amount">&#36;100 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Useable</li>
+                                <li>Easily can useable 10GB</li>
+                                <li>Free Secuirity Service</li>
+                                <li>Dedicated Useable Account</li>
+                            </ul>
+                            <a href="#" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+-->
+    <!-- Price-Area -->
+
+
+
+<!--
+
+
+
+
+
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">What Our Client Say</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="testimonials">
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                            </div>
+                            <h3>Samirao Boekeo</h3>
+                            <h6>CEO, Classic Group</h6>
+                            <div class="testimonial-img">
+                                <img src="images/testimonial-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                            </div>
+                            <h3>Samirao Boekeo</h3>
+                            <h6>CEO, Classic Group</h6>
+                            <div class="testimonial-img">
+                                <img src="images/testimonial-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                            </div>
+                            <h3>Samirao Boekeo</h3>
+                            <h6>CEO, Classic Group</h6>
+                            <div class="testimonial-img">
+                                <img src="images/testimonial-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+-->
+
+
+
+    <!-- Contact-Area -->
+    <section id="contact-area" class="section-padding">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title">
+                            <h3 class="bar-title">Contact Us</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="contact-form">
+                            <form action="process.php" id="contact-form" method="post">
+                                <div class="form-double">
+                                    <input type="text" id="form-name" name="form-name" placeholder="Name" required="required">
+                                    <input type="number" placeholder="Phone Number">
+                                </div>
+                                <div class="form-double">
+                                    <input type="email" name="form-email" name="email" id="form-email" placeholder="Email" required="required">
+                                    <input type="text" name="form-subject" id="form-subject" placeholder="Subject" required="required">
+                                </div>
+                                <textarea name="form-message" id="message" id="form-message" rows="5" required="required" placeholder="Message"></textarea>
+                                <button class="bttn bttn-primary">Send Now</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="contact-info">
+                            <ul class="info">
+                                <li>
+                                    <span class="info-icon">
+                                        <i class="icofont icofont-social-google-map"></i>
+                                    </span> 999 Main Street <br /> Palo Alto, CA
+                                </li>
+                                <li>
+                                    <span class="info-icon">
+                                        <i class="icofont icofont-ui-cell-phone"></i>
+                                    </span> (+01) 650-555-8229
+                                </li>
+                                <li>
+                                    <span class="info-icon">
+                                        <i class="icofont icofont-envelope"></i>
+                                    </span> info@veva.one
+                                </li>
+                            </ul>
+                            <div class="social-menu-2">
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-github"></i></a>
+                                <a href="#"><i class="icofont icofont-social-telegram"></i></a>
+                                <a href="#"><i class="icofont icofont-social-slack"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- Contact-Area / -->
+
+
+
+
+
+    <!-- Footer-Area -->
+    <footer class="footer-area gray-bg">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-text">
+                            <h4 class="upper">VEVA</h4>
+                            <p>VEVA has a mission statement and it can be summarized here</p>
+                            <div class="social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-github"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                                <a href="#"><i class="icofont icofont-social-telegram"></i></a>
+                                <a href="#"><i class="icofont icofont-social-slack"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-md-offset-1">
+                        <div class="footer-single">
+                            <h4 class="upper">News</h4>
+                            <ul>
+                                <li><a href="#">Mailing List</a></li>
+                                <li><a href="#">Medium</a></li>
+                                <li><a href="#">Blog</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="single-footer-widget f_social_wd">
-                            <h6 class="footer_title">Follow Us</h6>
-                            <p>@vevaone</p>
-                            <div class="f_social">
-                            	<a href="#"><i class="fa fa-github"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-slack"></i></a>
-								<a href="#"><i class="fa fa-facebook"></i></a>
-                            </div>
+                    <div class="col-xs-6 col-md-2">
+                        <div class="footer-single">
+                            <h4 class="upper">Company</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Projects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <div class="footer-single">
+                            <h4 class="upper">Partners</h4>
+                            <ul>
+                                <li><a href="#">BayNet</a></li>
+                                <li><a href="#">Berkeley Broadband</a></li>
+                                <li><a href="#">Silicon WISP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <div class="footer-single">
+                            <h4 class="upper">Resources</h4>
+                            <ul>
+                                <li><a href="#">WISPA</a></li>
+                                <li><a href="#">FCC</a></li>
+                                <li><a href="#">Select Spectrum</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-12 footer-text text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="copyright">Copyright VEVA &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icofont icofont-heart-alt" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
                 </div>
             </div>
-        </footer>
-		<!--================ End footer Area  =================-->
+        </div>
+    </footer>
+    <!-- Footer-Area / -->
 
 
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bars.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
+    <script src="js/maps.js"></script>
+</body>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/jquery-ui/jquery-ui.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
 </html>
