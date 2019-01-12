@@ -65,6 +65,17 @@ a {
     color: #898989;
 }
 
+.contactText {
+    color: #ffffff;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    float: none;
+    display: inline-block;
+}
+
 
 input:focus,
 button:focus,
@@ -1414,11 +1425,28 @@ a.scrolldown {
     border-radius: 3px;
 }
 
+.contact-info-footer {
+    padding: 30px 50px;
+    color: #ffffff;
+    background: #a1c4fd;
+    background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
+    border-radius: 3px;
+}
+
 .contact-info .info {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
+}
+
+.contact-info-footer .info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
 }
 
 
@@ -1429,7 +1457,18 @@ a.scrolldown {
     line-height: 2.3em;
 }
 
+.contact-info-footer .info li {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 60px;
+    line-height: 2.3em;
+}
+
 .contact-info .info li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info-footer .info li:last-child {
     margin-bottom: 0;
 }
 
@@ -1446,7 +1485,26 @@ a.scrolldown {
     border-radius: 50%;
 }
 
+.contact-info-footer .info li .info-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
 .contact-info .info li .info-icon i.icofont {
+    background: -webkit-linear-gradient(#a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-info-footer .info li .info-icon i.icofont {
     background: -webkit-linear-gradient(#a1c4fd, #c2e9fb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
