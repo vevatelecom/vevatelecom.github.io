@@ -39,6 +39,8 @@ CSS INDEX
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900|Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+
 
 /*-------------------
 2. Theme Default CSS
@@ -51,7 +53,7 @@ body {
 }
 
 body {
-font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
     font-size: 15px;
     line-height: 1.8em;
     color: #898989;
@@ -247,12 +249,12 @@ input:-webkit-autofill:focus {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .site2 .mainmenu-area,
 .mainmenu-area.affix {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .mainmenu-area #mainmenu ul.nav.navbar-nav li a {
@@ -333,7 +335,37 @@ a.scrolldown {
 
 .header-area {
     position: relative;
-    background: url('images/header-bg.jpg') no-repeat scroll center center / cover;
+    /*background: url('images/header-bg.jpg') no-repeat scroll center center / cover;*/
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.header-area2 {
+    position: relative;
+    /*background: url('images/header-bg.jpg') no-repeat scroll center center / cover;*/
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.blogContainer {
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.header-area3 {
+    position: relative;
+    /*background: url('images/header-bg.jpg') no-repeat scroll center center / cover;*/
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.header-area4 {
+    position: relative;
+    /*background: url('images/header-bg.jpg') no-repeat scroll center center / cover;*/
+    background-color: grey;
     width: 100%;
     height: 100%;
 }
@@ -350,6 +382,8 @@ a.scrolldown {
     z-index: 1;
 }
 
+
+/*
 .overlay:after {
     content: "";
     position: absolute;
@@ -361,14 +395,55 @@ a.scrolldown {
     background: #000000;
     opacity: 0.4;
 }
+*/
 
 .site2 .header-area {
-    background-image: url('images/header-bg-2.jpg');
+    /*background-image: url('images/header-bg-2.jpg');*/
+    background-color: #ffffff;
+}
+
+.site2 .header-area2 {
+    /*background-image: url('images/header-bg-2.jpg');*/
+    background-color: lightblue;
+}
+
+.site2 .header-area4 {
+    /*background-image: url('images/header-bg-2.jpg');*/
+    background-color: darkblue;
+}
+
+.site2 .header-area3 {
+    /*background-image: url('images/header-bg-2.jpg');*/
+    background-color: red;
 }
 
 .header-area .header-text .header-title {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header-area2 .header-text .header-title {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header-area3 .header-text .header-title {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header-area4 .header-text .header-title {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
     font-size: 80px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -376,13 +451,49 @@ a.scrolldown {
 
 .about-area .header-text .header-title {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 80px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
 .header-area .header-text .header-title .dot {
+    display: inline-block;
+    border: 5px solid #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #a1c4fd;
+    background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
+}
+
+.header-area3 .header-text .header-title .dot {
+    display: inline-block;
+    border: 5px solid #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #a1c4fd;
+    background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
+}
+
+.header-area4 .header-text .header-title .dot {
+    display: inline-block;
+    border: 5px solid #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #a1c4fd;
+    background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
+}
+
+.header-area2 .header-text .header-title .dot {
     display: inline-block;
     border: 5px solid #ffffff;
     width: 25px;
@@ -407,6 +518,18 @@ a.scrolldown {
 }
 
 .header-area .header-text {
+    color: black;
+}
+
+.header-area2 .header-text {
+    color: black;
+}
+
+.header-area3 .header-text {
+    color: #ffffff;
+}
+
+.header-area4 .header-text {
     color: #ffffff;
 }
 
@@ -415,6 +538,24 @@ a.scrolldown {
 }
 
 .header-area .header-text q {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.header-area2 .header-text q {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.header-area3 .header-text q {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.header-area4 .header-text q {
     font-size: 22px;
     display: block;
     margin-bottom: 50px;
@@ -1575,4 +1716,167 @@ a.scrolldown {
 #maps {
     width: 100%;
     height: 600px;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: -20px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#minMenu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#minMenu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/*Sticky Panels*/
+.sticky-panel {
+    position: fixed;
+    z-index: 999;
+    background-color: #D3D3D3;
+}
+
+.sticky-panel-top {
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.sticky-panel-right {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+}
+
+.sticky-panel-bottom {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.sticky-panel-left {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
 }
