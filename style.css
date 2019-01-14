@@ -39,7 +39,7 @@ CSS INDEX
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900|Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 
 /*-------------------
@@ -414,7 +414,7 @@ a.scrolldown {
 
 .site2 .header-area3 {
     /*background-image: url('images/header-bg-2.jpg');*/
-    background-color: red;
+    background-color: darkred;
 }
 
 .header-area .header-text .header-title {
