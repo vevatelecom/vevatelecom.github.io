@@ -338,6 +338,13 @@ a.scrolldown {
     height: 100%;
 }
 
+.about-area {
+    position: relative;
+    background: url('assets/about.jpg') no-repeat scroll center center / cover;
+    width: 100%;
+    height: 60%;
+}
+
 .overlay {
     position: relative;
     z-index: 1;
@@ -367,7 +374,27 @@ a.scrolldown {
     letter-spacing: 2px;
 }
 
+.about-area .header-text .header-title {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
 .header-area .header-text .header-title .dot {
+    display: inline-block;
+    border: 5px solid #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #a1c4fd;
+    background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
+}
+
+.about-area .header-text .header-title .dot {
     display: inline-block;
     border: 5px solid #ffffff;
     width: 25px;
@@ -383,7 +410,17 @@ a.scrolldown {
     color: #ffffff;
 }
 
+.about-area .header-text {
+    color: #ffffff;
+}
+
 .header-area .header-text q {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.about-area .header-text q {
     font-size: 22px;
     display: block;
     margin-bottom: 50px;
