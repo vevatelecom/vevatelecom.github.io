@@ -80,18 +80,18 @@ a {
 }
 
 .topSlide {
-  margin-top: 90px;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 
 .bodyHeader {
-  font-size: 90px;
+  font-size: 50px;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
 .header {
-  font-size: 130px;
+  font-size: 90px;
 }
 
 .tower {
@@ -135,13 +135,24 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .flexUp {
     flex-direction: row;
   }
+  .header {
+    font-size: 130px;
+  }
+  .topSlide {
+    margin-top: 90px;
+  }
+  .bodyHeader {
+    font-size: 90px;
+  }
 }
+
 
 .footerFlex {
   display: flex;
