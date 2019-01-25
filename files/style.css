@@ -127,15 +127,20 @@ a {
 }
 
 .flexUp {
-
   margin-right: 100px;
   margin-left: 100px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexUp {
+    flex-direction: row;
+  }
 }
 
 .footerFlex {
