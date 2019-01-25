@@ -1689,15 +1689,7 @@ fieldset h1 {
     color: #fff;
 }
 
-a.scroll-down-slide {
-    position: absolute;
-    bottom: 80px;
-    width: 80px;
-    height: 80px;
-    margin-left: -40px;
-    left: 50%;
-    z-index: 900;
-}
+
 
 a.scroll-down-slide2 {
     position: static;
