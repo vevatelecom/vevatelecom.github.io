@@ -43,16 +43,24 @@ a {
 
   max-height:100%;
   width: 100%;
-  background-color: white;
+  background-color: lightgrey;
+  /*background-color: #EEC643;*/
 }
 
 #slide4 {
 
   max-height:100%;
   width: 100%;
+  background-color: white;
+}
+
+#slide5 {
+
+  max-height:100%;
+  width: 100%;
   color:white;
   background-color: #292929;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
 }
 
 #footer {
@@ -60,7 +68,7 @@ a {
   max-height:100%;
   width: 100%;
   background-color: white;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   margin-top: 30px;
 }
 
@@ -87,9 +95,16 @@ a {
 .fixedHeaderText {
   width: 100%;
   text-align: right;
-  padding-right: 80px;
+  padding-right: 25px;
   font-size: 15px;
 }
+
+
+.bar {
+  margin-right:20px;
+  display: none;
+}
+
 
 @media (min-width: 768px) {
   .fixedHeaderText {
@@ -98,6 +113,16 @@ a {
     padding-right: 80px;
     font-size: 25px;
   }
+
+  .bar {
+    margin-right:20px;
+    display: inline;
+  }
+
+}
+
+.header {
+  font-size: 90px;
 }
 
 .topSlide {
@@ -111,9 +136,24 @@ a {
   margin-top: 40px;
 }
 
-.header {
-  font-size: 90px;
+
+.bodyHeaderOpp {
+  font-size: 45px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
+
+@media (min-width: 768px) {
+
+  .bodyHeaderOpp {
+    font-size: 90px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+
+}
+
 
 .tower {
   max-height: 140px;
@@ -131,6 +171,18 @@ a {
   padding-right: 40px;
   padding-left: 40px;
   font-size: 20px;
+}
+
+.oppText {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.oppBox {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
@@ -155,6 +207,13 @@ a {
   justify-content: space-between;
 }
 
+.oppFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .flexUp {
   margin-right: 100px;
   margin-left: 100px;
@@ -171,21 +230,31 @@ a {
   .flexUp {
     flex-direction: row;
   }
+
   .header {
     font-size: 130px;
   }
+
   .topSlide {
     margin-top: 90px;
   }
+
   .bodyHeader {
     font-size: 90px;
+  }
+
+  .oppFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 
 .footerFlex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -193,18 +262,22 @@ a {
 @media (min-width: 768px) {
 
   .footer-right {
-    margin-right: 100px;
+    padding-right: 70px;
   }
 
   .footer-left {
-    margin-left: 100px;
+    padding-left: 20px;
+  }
+
+  .lightBorder {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
 }
 
 .footerHead {
   font-size: 25px;
-  margin-bottom: 10px;
 }
 
 .footer-left {
@@ -217,6 +290,22 @@ a {
 
 .centerText {
   text-align: center;
+}
+
+.centerTextOpp {
+  text-align: center;
+  font-size: 20px;
+}
+
+.lightBorder {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.fab {
+  font-size: 30px;
+  margin:10px;
 }
 
 /*Sticky Panels*/
@@ -279,6 +368,7 @@ a {
       height: 100%;
       width: 40px;
   }
+
 
 
 }
