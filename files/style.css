@@ -170,7 +170,15 @@ a {
 .text {
   padding-right: 40px;
   padding-left: 40px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.missionText {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 25px;
+  text-align: justify;
+  text-align-last: center;
 }
 
 .oppText {
@@ -190,6 +198,14 @@ a {
     padding-right: 140px;
     padding-left: 140px;
     font-size: 25px;
+  }
+
+  .missionText {
+    padding-right: 140px;
+    padding-left: 140px;
+    font-size: 25px;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 
@@ -243,12 +259,6 @@ a {
     font-size: 90px;
   }
 
-  .oppFlex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 
@@ -270,8 +280,19 @@ a {
   }
 
   .lightBorder {
-    margin-right: 50px;
-    margin-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .oppFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
 }
