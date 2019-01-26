@@ -66,7 +66,7 @@ a {
 #footer {
 
   max-height:100%;
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -154,6 +154,18 @@ a {
 
 }
 
+@media (max-width: 374px) {
+
+  .bodyHeaderOpp {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+
+}
+
+
 
 .tower {
   max-height: 140px;
@@ -177,7 +189,7 @@ a {
   padding-right: 40px;
   padding-left: 40px;
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
   text-align-last: center;
 }
 
@@ -218,9 +230,9 @@ a {
 
 .flexOutside {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .oppFlex {
@@ -259,6 +271,14 @@ a {
     font-size: 90px;
   }
 
+  .flexOutside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+
 }
 
 
@@ -268,6 +288,15 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.footer-left {
+  margin-left: 0px;
+}
+
+.footer-right {
+  margin-right: 0px;
+}
+
 
 @media (min-width: 768px) {
 
@@ -301,14 +330,6 @@ a {
   font-size: 25px;
 }
 
-.footer-left {
-  margin-left: 40px;
-}
-
-.footer-right {
-  margin-right: 40px;
-}
-
 .centerText {
   text-align: center;
 }
@@ -332,7 +353,7 @@ a {
 /*Sticky Panels*/
 .sticky-panel {
     position: fixed;
-    z-index: 999;
+    z-index: 975;
     background-color: #f1f1ef;
 }
 
@@ -390,6 +411,180 @@ a {
       width: 40px;
   }
 
+
+
+}
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 23px;
+  left: 12px;
+
+  z-index: 991;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 992; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 991;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#minMenu
+{
+  position: absolute;
+  width: 90px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  padding-bottom: 30px;
+
+  color:white;
+
+  background: #292929;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#minMenu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+@media (min-width: 768px) {
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 31px;
+
+    z-index: 991;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #minMenu
+  {
+    position: absolute;
+    width: 120px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    padding-bottom: 30px;
+
+    color:white;
+
+    background: #292929;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
 
 
 }
