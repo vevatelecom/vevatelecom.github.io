@@ -245,6 +245,30 @@ a {
   justify-content: center;
 }
 
+.flexRow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .flexRow {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+}
+
 .flexOutside {
   display: flex;
   flex-direction: column-reverse;
