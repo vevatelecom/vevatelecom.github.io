@@ -39,6 +39,23 @@ a {
   background-color: #005dff;
 }
 
+#team {
+
+  max-height:100%;
+  width: 100%;
+  color:white;
+  background-color: #292929;
+  padding-bottom: 70px;
+}
+
+#about {
+
+  max-height:100%;
+  max-width: 100%;
+  color:white;
+  background-color: #005dff;
+}
+
 #slide3 {
 
   max-height:100%;
@@ -587,4 +604,14 @@ a {
   }
 
 
+}
+
+
+/******TEAM PAGE ***********/
+
+.teamPhoto {
+  max-width:200px;
+  max-height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
