@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+:root {
+  /*CSS variables*/
+  --background-color: white;
+  --primary-font-color: white;
+  --secondary-font-color: black;
+  --primary-color: #34344A;
+  --secondary-color: #FFA400;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: var(--font-color);
+}
+
+hr {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  max-width: 80%;
+}
+
+a {
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/****** NAVBAR ********/
+
+
+.navbar {
+  width: auto;
+  background-color: var(--background-color);
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.navbar-logo {
+  padding-left: 50px;
+  color: var(--primary-color);
+
+}
+
+.navbar-menu {
+
+  padding-right: 50px;
+  color: var(--font-color);
+
+}
+
+
+
+/****** HERO ********/
+
+.hero {
+  background-color: var(--primary-color);
+  min-height: 400px;
+  color: var(--primary-font-color);
+}
+
+.hero-image {
+  margin: 20px;
+  padding: 10px;
+  max-height: 400px;
+  max-width: auto;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border-style: inset;
+  border-color: var(--secondary-color);
+}
+
+.hero-text {
+
+  margin: 30px;
+  font-size: 40px;
+  max-width: 500px;
+
+}
+
+
+
+/****** INFO DIV ********/
+
+
+.information {
+  background-color: var(--secondary-color);
+  min-height: 100px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.infoBoxes {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/****** LATEST DIV ********/
+
+
+.latest {
+  background-color: white;
+  min-height: 100px;
+}
+
+
+/****** NEWS DIV ********/
+
+
+.news {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color) !important;
+  min-height: 100px;
+}
+
+
+.articles {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--secondary-font-color);
+  min-height: 100px;
+  height: 100%;
+}
+
+
+
+/****** FOOTER ********/
+
+
+#footer {
+  padding: 20px;
+
+}
+
+.social {
+  font-size: 30px;
+}
+
+.social-icons {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+
+/****** GENERAL ********/
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.halfContainer {
+  width: 40%;
+  background-color: var(--background-color);
+
+}
+
+.moveLeft {
+  margin-right: 50px;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+
+.sideMargins {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/******* FLEXBOX *************/
+
+.flexy {
+  display: flex;
+}
+
+.rowFlex {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-edges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.vert-flex {
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+
+}
