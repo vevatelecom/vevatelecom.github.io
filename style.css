@@ -140,6 +140,51 @@ a:hover {
 }
 
 
+/******ABOUT PAGE ***********/
+
+.teamPhoto {
+  max-width:200px;
+  max-height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/****** MISSION PAGE ***********/
+
+.hero-image-secondary {
+  margin: 20px;
+  margin-right: 150px;
+  padding: 10px;
+  max-height: 400px;
+  max-width: auto;
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);
+  border-style: inset;
+  border-color: var(--primary-color);*/
+}
+
+.mission-text {
+  font-size: 25px;
+}
+
+
+
+/****** RESOURCES PAGE ***********/
+
+.mediaColumn {
+
+  padding: 50px;
+  border-color: var(--primary-color);
+  border-style: dashed;
+
+}
+
+.media-image {
+  max-width: 400px;
+  max-height: auto;
+}
+
 
 /****** FOOTER ********/
 
@@ -226,6 +271,7 @@ a:hover {
 }
 
 .flex-space {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;

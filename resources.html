@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>VEVA</title>
 
-    <link href="./files/style.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   </head>
@@ -13,97 +13,136 @@
 
   <body>
 
+<!-- NAVBAR  -->
 
-    <div class="sticky-panel sticky-panel-top fixedHeader"> <span class="fixedHeaderText">San Francisco</span> </div>
-    <div class="sticky-panel sticky-panel-right"></div>
-    <div class="sticky-panel sticky-panel-bottom"></div>
-    <div class="sticky-panel sticky-panel-left"></div>
-
-
-
-    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-
-                  <nav role="navigation">
-                    <div id="menuToggle">
-                      <!--
-                      A fake / hidden checkbox is used as click reciever,
-                      so you can use the :checked selector on it.
-                      -->
-                      <input type="checkbox" />
-
-                      <!--
-                      Some spans to act as a hamburger.
-
-                      They are acting like a real hamburger,
-                      not that McDonalds stuff.
-                      -->
-                      <span></span>
-                      <span></span>
-                      <span></span>
-
-                      <!--
-                      Too bad the menu has to be inside of the button
-                      but hey, it's pure CSS magic.
-                      -->
-                      <ul id="minMenu">
-                        <a href="./index.html"><li>Home</li></a>
-                        <a href="./about.html"><li>About</li></a>
-                        <a href="#slide3"><li>Product</li></a>
-                        <a href="#footer"><li>Contact</li></a>
-                      </ul>
-                    </div>
-                  </nav>
+    <div class = "navbar navbar-logo flex-edges">
+      <div>
+        <span>VEVA</span>
+      </div>
 
 
-                </div>
-            </div>
+      <div class = "navbar-menu halfContainer flex-edges">
+        <a href="./index.html"><span>HOME</span></a>
+        <a href="./about.html"><span>ABOUT</span></a>
+        <a href="./index.html"><span>PRODUCT</span></a>
+        <a href="./resources.html"><span>RESOURCES</span></a>
+
+      </div>
+
+
+    </div>
+
+
+
+<!-- Resources Div -->
+
+    <div class = "flexy">
+      <div class = "articles text-top">
+
+        <span class = "hero-text">
+          Learn
+          <hr class = "marginBottom">
+        </span>
+
+
+        <!-- LEARN ARTICLE #1 -->
+
+        <div class = "mediaColumn text-center">
+          What is Fixed Wireless Internet?
+            <br>
+          Android Authority breaks down the pros and cons
+          <br>
+          <img class = "media-image" src="./assets/resources/learn/aa.jpg">
+
         </div>
-    </nav>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- LEARN ARTICLE #2 -->
+        <a href = "https://www.visualcapitalist.com/complexity-of-wireless-spectrum/">
+          <div class = "mediaColumn text-center">
+            What is Wireless Spectrum?
+              <br>
+            A useful guide from Visual Capitalist
+            <br>
+            <img class = "media-image" src="./assets/resources/learn/vc.jpg">
+
+          </div>
+        </a>
+
+
+      </div>
+
+
+      <div class = "news text-center">
+
+        <span class = "hero-text">
+          Explore
+          <hr class = "marginBottom">
+        </span>
+
+        <!-- ARTICLE #1 -->
+        <div>
+
+          EXPLORE
+        </div>
+
+      </div>
+
+
+    </div>
 
 
 
-    <div id="slide4" class="flex">
 
-      <span class="bodyHeader">Resources</span>
+<!-- Medium Div -->
 
-      <div class="flexRow">
 
-        <div><img class="teamPhoto" src="./assets/resources/ss.jpg"></div>
-        <div><img class="teamPhoto" src="./assets/resources/fcc.png"></div>
-        <div><img class="teamPhoto" src="./assets/resources/syoisp.png"></div>
-        <div><img class="teamPhoto" src="./assets/resources/wispa.png"></div>
+    <div class = "latest text-center">
+
+      <span class = "hero-text">
+        Latest
+        <hr class = "marginBottom">
+      </span>
+
+
+      <div id="medium-widget" style="max-width:80%; margin: 0 auto;">
+      </div>
+
+      <!--  MEDIUM  WIDGET  -->
+          <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+          <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@vevaone","postsPerLine":2,"limit":2,"picture":"none","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+
+    </div>
+
+
+
+<!-- FOOTER Div -->
+
+
+    <div id="footer" class="flex-space">
+
+      <div class="flex-edges social">
+
+        <a href="https://www.medium.com/@vevaone"><i class="fab fa-medium-m social-icons"></i></a>
+        <a href="http://www.twitter.com/vevaone"><i class="fab fa-twitter social-icons"></i></a>
+        <a href="http://www.linkedin.com/company/vevaone"><i class="fab fa-linkedin-in social-icons"></i></a>
+
+      </div>
+
+      <div class="social">
+        <span class=""><a href="mailto:info@veva.one">Contact   <i class="fas fa-envelope"></i></a></span>
+
 
       </div>
 
     </div>
 
 
-    <div id="footer" class="flexOutside">
 
-      <div class="footer-left footerFlex">
-
-        <a href="https://www.medium.com/@vevaone"><i class="fab fa-medium-m"></i></a>
-        <a href="http://www.twitter.com/vevaone"><i class="fab fa-twitter"></i></a>
-        <a href="http://www.linkedin.com/company/vevaone"><i class="fab fa-linkedin-in"></i></a>
-
-      </div>
-
-      <div class="footer-right footerFlex">
-        <span class="footerHead"><a href="mailto:info@veva.one">Contact</a></span>
-
-
-      </div>
-
-    </div>
-
-    <div id="copyright" class="centerText"> Copyright © 2019 VEVA.one </div>
+    <div id="copyright" class="copyright"> Copyright © 2019 VEVA.one </div>
 
   </body>
 

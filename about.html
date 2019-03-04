@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>VEVA</title>
 
-    <link href="./files/style.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   </head>
@@ -13,133 +13,134 @@
 
   <body>
 
+    <!-- NAVBAR  -->
 
-    <div class="sticky-panel sticky-panel-top fixedHeader"> <span class="fixedHeaderText">San Francisco</span> </div>
-    <div class="sticky-panel sticky-panel-right"></div>
-    <div class="sticky-panel sticky-panel-bottom"></div>
-    <div class="sticky-panel sticky-panel-left"></div>
-
-
-
-    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-
-                  <nav role="navigation">
-                    <div id="menuToggle">
-                      <!--
-                      A fake / hidden checkbox is used as click reciever,
-                      so you can use the :checked selector on it.
-                      -->
-                      <input type="checkbox" />
-
-                      <!--
-                      Some spans to act as a hamburger.
-
-                      They are acting like a real hamburger,
-                      not that McDonalds stuff.
-                      -->
-                      <span></span>
-                      <span></span>
-                      <span></span>
-
-                      <!--
-                      Too bad the menu has to be inside of the button
-                      but hey, it's pure CSS magic.
-                      -->
-                      <ul id="minMenu">
-                        <a href="./index.html"><li>Home</li></a>
-                        <a href="./about.html"><li>About</li></a>
-                        <a href="./index.html"><li>Product</li></a>
-                        <a href="./resources.html"><li>Resources</li></a>
-                      </ul>
-                    </div>
-                  </nav>
+        <div class = "navbar navbar-logo flex-edges">
+          <div>
+            <span>VEVA</span>
+          </div>
 
 
-                </div>
-            </div>
+          <div class = "navbar-menu halfContainer flex-edges">
+            <a href="./index.html"><span>HOME</span></a>
+            <a href="./about.html"><span>ABOUT</span></a>
+            <a href="./index.html"><span>PRODUCT</span></a>
+            <a href="./resources.html"><span>RESOURCES</span></a>
+
+          </div>
+
+
         </div>
-    </nav>
 
 
 
+      <!-- Hero Div -->
+
+          <div class = "hero flex-space">
 
 
-    <div id="about" class="flex">
-
-      <span class="bodyHeader">ABOUT</span>
-
-      <div class="missionText">
-        VEVA is a platform to fund regional wireless operators.  <br>
-      Concentration among many large telcos (wired & wireless) has led to subpar performance and a widening access and opportunity divide, globally. The reason is simple: access to capital.
-      Our innovative decentralized funding model supports regional operators’ growth without the need for consolidation while delivering superior returns for investors.
-
-      </div>
-
-      <div><a href="#team"><img class="arrow" src="./assets/arrow.png"></a></div>
-
-    </div>
-
-
-
-
-
-    <div id="team" class="flex">
-
-      <span class="bodyHeader">TEAM</span>
-
-      <div class="oppFlex">
-          <div class="lightBorder flex">
-              <div class="oppText centerText">Yann Ngongang</div>
-              <img class="teamPhoto" src="./assets/yn.png">
-              <div class="oppBox centerTextOpp">
-MBA Stanford, BS University of Maryland
-              </div>
-          </div>
-          <div class="lightBorder flex"> <div class="oppText centerText">Ravi Anapoarti</div>
-          <div><img class="teamPhoto" src="./assets/ra.jpg"></div>
-            <div class="oppBox centerTextOpp">
-MBA U.C. Berkeley, MS UC Berkeley
+            <div>
+              <img class = "hero-image" src="./assets/cannister.png">
             </div>
+
+            <div class = "vert-flex">
+              <span class = "hero-text">
+                With over 50 years of combined experience in telecom, finance, law, investing, and
+                technology, our team is built to make VEVA a success.
+              </span>
+            </div>
+
+
           </div>
-          <div class="lightBorder flex"> <div class="oppText centerText">Reuben Youngblom</div>
-          <img class="teamPhoto"  src="./assets/ry.png">
-            <div class="oppBox centerTextOpp">
-JD U.C. Davis, BA U.C. Santa Cruz
-</div>
+
+        <!-- Team Div -->
+
+          <div class = "information text-center">
+
+            <span class = "hero-text">
+              TEAM
+              <hr class = "marginBottom">
+            </span>
+
+            <div class = "flex-space">
+
+              <div class = "text-center">
+                <span>
+                  <h2>Yann Ngongang</h2>
+                </span>
+
+                <span>
+                  <img class="teamPhoto" src="./assets/yn.png">
+                  <br>
+                </span>
+
+                <span>
+                  MBA Stanford, BS University of Maryland
+                </span>
+              </div>
+
+
+              <div class = "text-center">
+                <span>
+                  <h2>Ravi Anaparti</h2>
+                </span>
+
+                <span>
+                  <img class="teamPhoto" src="./assets/ra.jpg">
+                  <br>
+                </span>
+
+                <span>
+                  MBA U.C. Berkeley, MS UC Berkeley
+                </span>
+              </div>
+
+
+              <div class = "text-center">
+                <span>
+                  <h2>Reuben Youngblom</h2>
+                </span>
+
+                <span>
+                  <img class="teamPhoto" src="./assets/ry.png">
+                  <br>
+                </span>
+
+                <span>
+                  JD U.C. Davis, BA U.C. Santa Cruz
+                </span>
+              </div>
+
+
+
+            </div>
+
           </div>
-      </div>
-
-    </div>
 
 
 
-
-    <div id="footer" class="flexOutside">
-
-      <div class="footer-left footerFlex">
-
-        <a href="https://www.medium.com/@vevaone"><i class="fab fa-medium-m"></i></a>
-        <a href="http://www.twitter.com/vevaone"><i class="fab fa-twitter"></i></a>
-        <a href="http://www.linkedin.com/company/vevaone"><i class="fab fa-linkedin-in"></i></a>
-
-      </div>
-
-      <div class="footer-right footerFlex">
-        <span class="footerHead"><a href="mailto:info@veva.one">Contact</a></span>
+    <!-- FOOTER Div -->
 
 
-      </div>
+        <div id="footer" class="flex-space">
 
-    </div>
+          <div class="flex-edges social">
 
-    <div id="copyright" class="centerText"> Copyright © 2019 VEVA.one </div>
+            <a href="https://www.medium.com/@vevaone"><i class="fab fa-medium-m social-icons"></i></a>
+            <a href="http://www.twitter.com/vevaone"><i class="fab fa-twitter social-icons"></i></a>
+            <a href="http://www.linkedin.com/company/vevaone"><i class="fab fa-linkedin-in social-icons"></i></a>
+
+          </div>
+
+          <div class="">
+            <span class=""><a href="mailto:info@veva.one">Contact   <i class="fas fa-envelope"></i></a></span>
+
+
+          </div>
+
+        </div>
+
+        <div id="copyright" class="copyright"> Copyright © 2019 VEVA.one </div>
 
   </body>
 
