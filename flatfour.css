@@ -49,3 +49,53 @@ a {
   font-family: 'Source Sans Pro', sans-serif !important;
   letter-spacing: .1px;
 }
+
+
+
+
+.deals {
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.dealsAround {
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.vertDeals {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around !important;
+  flex-grow: 1;
+}
+
+.vertCenter {
+  display: flex;
+  flex-direction:column;
+  justify-content:center:center;
+  align-items: center;
+}
+
+.imageDiv {
+
+}
+
+.dealsButton {
+  background-color: #537EBA;
+  color:white;
+  height:40px;
+  width:auto;
+}
