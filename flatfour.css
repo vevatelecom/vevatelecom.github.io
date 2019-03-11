@@ -50,7 +50,9 @@ a {
   letter-spacing: .1px;
 }
 
-
+.headerBold {
+  font-size: 42px !important;
+}
 
 
 .deals {
