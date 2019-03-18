@@ -42,6 +42,12 @@
   font-weight: 400;
 }
 
+.mailDiv {
+  background-color: #537EBA !important;
+  background-image: none !important;
+
+}
+
 </style>
 
 
@@ -72,9 +78,12 @@
 
 
     <div class="g-header" style="position:fixed; background-color:white; max-width:auto; height:90px; z-index:999999; top: 0">
+
+      <a href = "./index.html">
     <div class="g-header__inner" style="position:relative; left:40px; top:30px; font-size: 25px; color: #384CA2">
           VEVA &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-chevron-down"></i>
     </div>
+  </a>
 
     <div style="position:fixed; right:0px; top:0px; background-color: darkgrey; width: 90px; height: 90px; display:flex; justify-content: center; align-items: center">
       <i class="fas fa-search"></i>
@@ -199,8 +208,9 @@
 
 
             <style>.s-area-flatiron .o-area-header--landing {
-                background-image: url(https://simonsfoundation.imgix.net/wp-content/uploads/2017/07/21121010/Blue-Banner-resized.png?auto=format&w=1220&h=410&fit=max&cs=strip&q=90);
+                background-image: url('');
                 background-position: left top;
+                background-size: 200px 100px;
               }
 
               @media
@@ -211,19 +221,30 @@
               (                min-resolution: 1.5dppx) {
                 .o-area-header--fill,
                 .o-area-header--blue {
-                  background-image: url(https://simonsfoundation.imgix.net/wp-content/uploads/2017/07/21121010/Blue-Banner-resized.png?auto=format&w=1220&h=410&fit=max&cs=strip&q=90&dpr=2);
+                  background-image: url('');
+                  background-size: 200px 100px;
                 }
               }
             .g-newsletter {
                 background-image: url(https://simonsfoundation.imgix.net/wp-content/uploads/2017/07/21121010/Blue-Banner-resized.png?auto=format&w=590&h=420&fit=max&cs=strip&q=90);
                 ;
-              }</style>
+              }
+
+              .headImg {
+                max-height: 600px;
+                max-width: auto;
+                padding-left:00px;
+                opacity: 0.5;
+              }
+
+            </style>
 
 
               <header class="o-area-header o-area-header--landing o-area-header--fill">
   <div class="o-area-header__inner">
     <div class="o-area-header__main">
-      <a href="" class="o-area-header__logo"><svg class="icon icon--flatiron-logo--branded "><use xlink:href="#icon--flatiron-logo--branded"></use></svg></a>
+    <!--  <a href="" class="o-area-header__logo"><svg class="icon icon--flatiron-logo--branded "><use xlink:href="#icon--flatiron-logo--branded"></use></svg></a> -->
+      <img src="./assets/home/bgc.png" class = "headImg">
     </div>
 
     <div class="o-area-header__intro">
@@ -243,10 +264,10 @@
   <div class="g-context-nav__inner">
 
     <header class="g-context-nav__header">
-  <a href="#">
+  <a href="./index.html">
     VEVA<svg class="icon icon--logo-small "><use xlink:href="#icon--logo-small"></use></svg>  </a>
 
-  <a href="#nav-flyout">
+  <a href="./index.html">
     <svg class="icon icon--chevron-down--small "><title>chevron-down--small</title><use xlink:href="#icon--chevron-down--small"></use></svg>  </a>
 </header>
 
@@ -273,12 +294,15 @@
               <li class=""><a href="#research">Research</a></li>
                 <li class=""><a href="#newsAnnouncements">News</a></li>
                 <!--<li class=""><a href="#signup">Events</a></li>-->
-                <li class=""><a href="#opportunity">Resources</a></li>
-                <li class=""><a href="./about.html">About</a><ul class="g-subnav__sub-menu">
-                  <li class=""><a href="#">Mission</a></li>
-                  <li class=""><a href="#">Team</a></li>
+                <li class=""><a href="#">Resources</a><ul class="g-subnav__sub-menu">
+                  <li class=""><a href="http://www.wispa.org">WISPA</a></li>
+                  <li class=""><a href="https://www.fcc.gov/">FCC</a></li>
                   <!--<li class=""><a href="#">Press</a></li>-->
-                  <li class=""><a href="#">Contact</a></li></ul></li>            </ul>
+                  <li class=""><a href="https://startyourownisp.com/">SYOISP</a></li></ul></li>
+                <li class=""><a href="./about.html">About</a><ul class="g-subnav__sub-menu">
+                  <!--<li class=""><a href="#">Mission</a></li>  FIXX  -->
+                  <li class=""><a href="#teamLink">Team</a></li>
+                  <li class=""><a href="#contactLink">Contact</a></li></ul></li>            </ul>
           </nav>
               </div>
     </div>
@@ -295,7 +319,7 @@
     </header>
     <div class="columns-container">
                 <article class="m-center m-center--center-for-computational-astrophysics">
-              <h3 class="m-center__title Label headerLight"><a href="#">Growing Demand for Better, Faster Broadband</a></h3>
+              <h3 class="m-center__title Label headerLight">Growing Demand for Better, Faster Broadband</h3>
 
 
               <ul class="m-center__links List m-center__linksX" >
@@ -334,7 +358,7 @@
                               -->
           </article>
                           <article class="m-center m-center--center-for-computational-biology">
-              <h3 class="m-center__title Label headerLight"><a href="#">Fiber-like Performance over Wireless</a></h3>
+              <h3 class="m-center__title Label headerLight">Fiber-like Performance over Wireless</h3>
 
               <ul class="m-center__links List m-center__linksX">
               <li>MU-MIMO, Beamforming, OFDM streamlines spectrum use</li>
@@ -345,7 +369,7 @@
 
           </article>
                           <article class="m-center m-center--center-for-computational-mathematics">
-              <h3 class="m-center__title Label headerLight"><a href="#">Governments are seeing broadband as urgent & critical</a></h3>
+              <h3 class="m-center__title Label headerLight">Governments are seeing broadband as urgent & critical</h3>
 
               <ul class="m-center__links List m-center__linksX">
 
@@ -357,7 +381,7 @@
 
           </article>
                           <article class="m-center m-center--center-for-computational-quantum-physics">
-              <h3 class="m-center__title Label headerLight"><a href="#">Incumbents are too slow & debt burdened to adapt</a></h3>
+              <h3 class="m-center__title Label headerLight">Incumbents are too slow & debt burdened to adapt</h3>
 
               <ul class="m-center__links List m-center__linksX">
                 <li>Market structure is that of a slow oligopoly</li>
@@ -369,6 +393,9 @@
                                     </div>
   </section>
 
+
+
+<!--
   <section class="o-split-list">
   <header class="m-module-header m-module-header--border">
       <h3 class="m-module-header__title centerHead headerBold"><a href="#">Technology and Computation</a></h3>
@@ -403,7 +430,7 @@
 
   <div class="o-strip__content">
     <p><p class = "contentLight">VEVA has big plans for the future, including sales support, blockchain integration, and bigger investments</p>
-</p>
+    </p>
   </div>
 
   <div class="o-strip__btn-wrapper">
@@ -413,12 +440,34 @@
   </div>
 </section>
 
+-->
+
+
+<section class="o-strip gray">
+<header class="o-strip__header">
+  <h3 class="m-module-header__title centerHead headerBold"> <a href="#">Technology</h3>
+</header>
+
+<div class="o-strip__content">
+  <p><p class = "contentLight">High-tech data analytics is the backbone of VEVA's success. We invest according to value - contact us to learn more!</p>
+  </p>
+</div>
+
+<div class="o-strip__btn-wrapper">
+  <a href="mailto:info@veva.one" class="o-strip__btn btn btn--outline btn--block">
+    Email VEVA
+    <svg class="icon icon--arrow "><use xlink:href="#icon--arrow"></use></svg>    </a>
+</div>
+</section>
+
+
+
       <section class="o-three-col o-default-list" id="research">
       <header class="m-module-header m-module-header--border">
         <h3 class="m-module-header__title centerHead headerBold">Research Highlights</h3>
 
         <div class="m-module-header__aside">
-          <a href="#" class="link--grey">View All</a>
+          <!--<a href="#" class="link--grey">View All</a>  FIXX -->
         </div>
       </header>
 
@@ -430,8 +479,10 @@
             <time class="m-post__meta">February 01, 2019</time><h3 class="m-post__title"><a href="#" target="_blank"><span  class = "contentLight"><em>What is DeFi? Decentralized Finance, Explained</em><span></a></h3><div class="m-pub__people"><a href="#"><span class = "contentLight">R. Anaparti</span></a><span class = "contentLight">, R. Youngblom, Y. Ngongang.</span> </div> <p class="m-post__excerpt"><p class = "contentLight">DeFi, or Decentralized Finance, offers a new funding model that leverages the latest technologies--including aspects of the blockchain model, the REIT model, and traditional financing&hellip;</p>
 </p> <a href="#" class="m-post__more">read more <svg class="icon icon--external "><use xlink:href="#icon--external"></use></svg></a>          </article>
                   <article class="m-post">
-            <time class="m-post__meta">January 4, 2019</time><h3 class="m-post__title"><a href="#" target="_blank"> <span class = "contentLight"><em>Municipal Broadband as an Economic Solution to the Digital Divide</em><span> </a></h3><div class="m-pub__people"><a href="#"><span class = "contentLight">R. Youngblom</span></a><span class = "contentLight">, Y. Ngongang, R. Anaparti.</span></div><p class="m-post__excerpt"><p class = "contentLight">The digitial divide is increasingly growing, with one solution taking the form of municipal broadband. However, there are significant regulatory challenges preventing an easy implementation&hellip;</p>
-</p><a href="#" class="m-post__more">read more <svg class="icon icon--external "><use xlink:href="#icon--external"></use></svg></a>          </article>
+            <time class="m-post__meta">January 4, 2019</time><h3 class="m-post__title"><a href="https://medium.com/@vevaone/re-introducing-veva-388b0fcd6210" target="_blank"> <span class = "contentLight"><em>(Re-)Introducing VEVA</em><span> </a></h3><div class="m-pub__people"><a href="#"><span class = "contentLight">R. Youngblom</span></a><span class = "contentLight">, Y. Ngongang, R. Anaparti.</span></div><p class="m-post__excerpt"><p class = "contentLight">
+              VEVA started as a blockchain company focused on building a token ratings platform, but we've come a long ways since then. Our focus is now squarely on decenralized finance and the ubounded potential for a new financing model for fixed assets&hellip;
+            </p>
+</p><a href="https://medium.com/@vevaone/re-introducing-veva-388b0fcd6210" class="m-post__more">read more <svg class="icon icon--external "><use xlink:href="#icon--external"></use></svg></a>          </article>
               </div>
     </section>
 
@@ -442,8 +493,26 @@
 
   <div>
 
+
+
+    <article class="m-post m-post--full ">
+      <div class="m-post__block-link ">
+        <div class="m-post__inner">
+
+          <figure class="m-post__image"> <img src="./assets/news/wispamerica.jpg" /></figure>
+
+          <aside class="m-post__aside">
+            <span class="m-post__cat ">Conference</span><time class="m-post__muted" datetime="2019-02-01T08:00:35+00:00">March 18, 2019</time>      </aside>
+
+          <div class="m-post__main">
+            <span class="m-post__title contentLight">WISPAmerica Thread: Updates, insights, and more!</span>        <span class="m-post__meta"></span>              </div>
+        </div>
+      </div>
+    </article>
+
+
 <article class="m-post m-post--full ">
-  <a href="#" class="m-post__block-link ">
+  <div class="m-post__block-link ">  <!-- will be link eventually --->
     <div class="m-post__inner">
 
       <figure class="m-post__image">
@@ -456,24 +525,15 @@
       <div class="m-post__main">
         <span class="m-post__title contentLight">VEVA team will be attending WISPAmerica 2019 in Cincinnati, OH</span>        <span class="m-post__meta"></span>              </div>
     </div>
-  </a>
+  </div>  <!--will be link  -->
 </article>
 
-<article class="m-post m-post--full ">
-  <a href="#" class="m-post__block-link ">
-    <div class="m-post__inner">
 
-      <aside class="m-post__aside">
-        <span class="m-post__cat ">Conference Recap</span><time class="m-post__muted" datetime="2019-02-01T08:00:35+00:00">February 01, 2019</time>      </aside>
 
-      <div class="m-post__main">
-        <span class="m-post__title contentLight">WBA Asia Telecom Summit Report</span>        <span class="m-post__meta"></span>              </div>
-    </div>
-  </a>
-</article>
+
 
 <article class="m-post m-post--full ">
-  <a href="#" class="m-post__block-link ">
+  <div class="m-post__block-link ">
     <div class="m-post__inner">
 
 
@@ -486,15 +546,15 @@
       <div class="m-post__main">
         <span class="m-post__title contentLight">VEVA will be at WBA Asia Telecom Summit in Hong Kong</span>        <span class="m-post__meta"></span>              </div>
     </div>
-  </a>
+  </div>
 </article>
   </div>
 
         <footer class="m-module-footer">
-      <a href="#" class="m-module-footer__more">View More</a>
+      <!--<a href="#" class="m-module-footer__more">View More</a>  FIXX -->
     </footer>
   </section>
-      <section class="o-default-list o-module--border-top">
+      <section class="o-default-list o-module--border-top" id="teamLink">
         <header class="m-module-header m-module-header--flush-border">
           <h3 class="m-module-header__title centerHead headerBold">Leadership</h3>
 
@@ -546,7 +606,8 @@
     </div>
 
       <div class="m-post__main contentLight">
-        <p>Ravi has a background in tech investing stemming from his days at Passport Capital, where he managed over 300mm in assets. He currently advises several fintech and blockchain companies, and holds an MBA from UC Berkeley and an MS from the University of Iowa.</p>        <span class="m-post__more link--blue">Read more</span>
+        <p>
+          Ravi has 15 years of capital markets experience, including as a portfolio manager at Passport Capital, where he managed over 300mm in assets. He currently advises several fintech and blockchain companies, and holds an MBA from UC Berkeley and an MS from the University of Iowa.        </p>        <span class="m-post__more link--blue">Read more</span>
       </div>
     </a>
   </div>
@@ -566,7 +627,11 @@
     </div>
 
       <div class="m-post__main contentLight">
-        <p>Reuben is passionate about emerging technologies and early-stage companies. His work spans AI, blockchain, and usability engineering, and his research interests include Proof of Work Economics and Tech for Good. He earned his law degree from UC Davis.</p>        <span class="m-post__more link--blue">Read more</span>
+        <p>
+
+          Reuben is passionate about emerging technologies and early-stage companies. His work spans AI, blockchain, and usability engineering, and his research interests include Proof of Work Economics and Tech for Good. He earned his law degree from UC Davis.
+
+        </p>        <span class="m-post__more link--blue">Read more</span>
       </div>
     </a>
   </div>
@@ -586,8 +651,13 @@
       </main>
 
 
-<div class="g-newsletter g-newsletter--pa" id="signup">
+<div class="g-newsletter g-newsletter--pa mailDiv" id="signup">
+
+<img src="./assets/home/bgc.png" class="headImg"/>
+
   <div class="g-newsletter__main">
+
+
     <!-- <span class="g-newsletter__title"></span> -->
     <span class="g-newsletter__title"><span class = "contentLight"><b>Advanced Industry Anaysis and Updates<b> </span><span class="g-newsletter__subtitle"><span class = "contentLight">Subscribe to the VEVA mailing list for insights sent straight to your inbox</span></span>    <div class="g-newsletter__form">
       <form action="#" method="get" class="a-newsletter-form">
@@ -613,24 +683,24 @@
         <svg class="icon icon--logo " role="img"><title>VEVA</title><use xlink:href="#icon--logo"></use></svg>      </a>
     </div>
 
-    <nav class="g-footer__nav">
+    <nav class="g-footer__nav" id = "contactLink">
   <ul>
-    <li class="menu-item menu-about-us"><a href="#">About</a></li>
+    <li class="menu-item menu-about-us"><a href="#teamLink">About</a></li>
     <!--<li class="menu-item menu-funding"><a href="#">Deals</a></li>-->
-    <li class="menu-item menu-news"><a href="#">News</a></li>
-    <li class="menu-item menu-events"><a href="#">Research</a></li>
+    <li class="menu-item menu-news"><a href="#newsAnnouncements">News</a></li>
+    <li class="menu-item menu-events"><a href="#research">Research</a></li>
     <!--<li class="menu-item menu-annual-report"><a href="#">Events</a></li>
     <li class="menu-item menu-contact-us"><a href="#">Annual Report</a></li>-->
-    <li class="menu-item menu-career-opportunities"><a target="_blank" href="#">Contact</a></li>
+    <li class="menu-item menu-career-opportunities"><a target="_blank" href="mailto:info@veva.one">Contact</a></li>
   </ul>
 </nav>
   </div>
 
   <div class="g-footer__bottom">
     <ul class="g-footer__social">
-  <li class="hide@large-">Follow Us</li><li><a href="#" target="_blank" aria-label="%s"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="#" target="_blank" aria-label="%s"><i class="fab fa-medium-m"></i></a></li>
-  <li><a href="#" target="_blank" aria-label="%s"> <i class="fab fa-linkedin-in"></i> </a></li></ul>
+  <li class="hide@large-">Follow Us</li><li><a href="https://twitter.com/vevaone" target="_blank" aria-label="%s"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://medium.com/@vevaone" target="_blank" aria-label="%s"><i class="fab fa-medium-m"></i></a></li>
+  <li><a href="https://www.linkedin.com/company/vevaone/" target="_blank" aria-label="%s"> <i class="fab fa-linkedin-in"></i> </a></li></ul>
 
     <ul class="g-footer__legal">
   <li>&copy; VEVA</li>
